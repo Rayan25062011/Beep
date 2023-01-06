@@ -63,9 +63,9 @@ wrapper: ":"
 # Examples
 
 ```javascript
-let Oak = new Interpreter(memory)
+let Beep = new Interpreter(memory)
 
-Oak.input(`
+Beep.input(`
 
 num a = 1
 num b = 2
