@@ -79,7 +79,7 @@ num b = 2
 num c = a + b
 
 if c == 3 :
-	print(c)
+   print(c)
 :
 else :
 
