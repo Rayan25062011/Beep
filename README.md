@@ -32,7 +32,9 @@ comparison operator: "=="
 
 loop: "from" expression "to" expression "with" identifier wrapper program wrapper
 
-expression::= term { "+" | "-" term }
+expression: term { "+" | "-" term }
+
+
 
 term: factor { "*" | "/" | "%" factor }
 
@@ -57,3 +59,26 @@ digit: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 
 
 wrapper: ":"
+
+# Examples
+
+```javascript
+let Oak = new Interpreter(memory)
+
+Oak.input(`
+
+num a = 1
+num b = 2
+
+num c = a + b
+
+if c == 3 :
+	print(c)
+:
+else :
+
+:
+
+`)
+
+```
