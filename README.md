@@ -23,16 +23,26 @@ comparison operator: "=="
 loop: "from" expression "to" expression "with" identifier wrapper program wrapper
 
 expression::= term { "+" | "-" term }
+
 term: factor { "*" | "/" | "%" factor }
+
 factor: number | string | boolean | array | identifier | "-" factor | "(" expression ")" | function-call
+
 function call: identifier "(" [ { expression "," } ] ")"
+
 identifier: { letter }
+
 number: { digit } [ "." { digit } ]
+
 string: """   """
+
 array: arr a = [...]
 boolean: "true" | "false"
 
+
 letter: "a" | "b" | ... | "y" | "z" | "A" | "B" | ... | "Y" | "Z"
+
 digit: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
 
 wrapper: ":"
