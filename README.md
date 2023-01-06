@@ -6,18 +6,25 @@ The Beep programming language, made for backend purposes.
 program: variable-declaration | conditional | loop | expression [ program ]
 
 variable declaration: variable-keyword variable-name assignment-operator variable-body
+
 variable keyword: "fn" / "num" / "str" / "arr" / "bool"
+
 variable name: identifier
+
 assignment operator: "="
+
 variable body: function-declaration / expression / comparison
 
 function declaration:  function-arguments + wrapper  + function-body wrapper
+
 function arguments: "(" [ { expression "," } ] ")"
+
 function body: program
 
 conditional: "if"/"else"/"else if"
 
 comparison: operator + expression + operator
+
 comparison operator: "=="
 
 loop: "from" expression "to" expression "with" identifier wrapper program wrapper
@@ -37,6 +44,7 @@ number: { digit } [ "." { digit } ]
 string: """   """
 
 array: arr a = [...]
+
 boolean: "true" | "false"
 
 
