@@ -65,10 +65,6 @@ wrapper: ":"
 git clone https://github.com/Rayan25062011/Beep/
 ```
 
-# Update Beep
-```
-python3 update.py
-```
 
 # Examples
 
