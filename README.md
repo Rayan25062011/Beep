@@ -1,4 +1,4 @@
-## Beep version 0.0.1
+## Beep version 0.1.2
 
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
